@@ -1,0 +1,43 @@
+*, ::after, ::before
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  outline: none
+
+html
+  font-size: 10px
+  scroll-behavior: smooth
+  
+
+body
+  font-family: "Inter-regular"
+  color: white
+  font-size: 1.8rem
+  background: black
+  &::-webkit-scrollbar 
+    width: 1rem
+    background-color: black
+  &::-webkit-scrollbar-thumb 
+    background-color: #242424
+    border-radius: 1rem
+    
+
+.background-wripper
+  position: fixed
+  display: flex
+  justify-content: space-between
+  width: 90%
+  left: 50%
+  transform: translateX(-50%)
+
+.background-line
+  width: .1rem
+  height: 100vh
+  background: white
+  opacity: .12
+
+.smooth-scroll 
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
